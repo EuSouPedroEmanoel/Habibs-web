@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Votar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'votar/style.css' %}">
+
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="{% static 'imagens/habibslogo.png' %}" alt="Logo do site">
+        <h1><a href="#" class="link">Habibs</a></h1>
+        <a href="#" id="home" class="link">Página inicial</a>
+        <a href="#" class="link">Votar</a>
+        <a href="#" class="link">Servidor</a>
+    </nav>
+    <div id="fundo">
+        <h2>
+            Vote para ganhar caixas no servidor!
+        </h2>
+        <section id="grid">
+            <div class="slot" itemid="1" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a href="https://minecraft.buzz/vote/13352" target="_blank" rel="noopener noreferrer">1</a>
+            </div>
+            <div class="slot" id="2" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>2</a>
+            </div>
+            <div class="slot" id="3"onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>3</a>
+            </div>
+            <div class="slot" id="4" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>4</a>
+            </div>
+            <div class="slot" id="5" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>5</a>
+            </div>
+            <div class="slot" id="6" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>6</a>
+            </div>
+            <div class="slot" id="7" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>7</a>
+            </div>
+            <div class="slot" id="8" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a>8</a>
+            </div>
+            <div class="slot" id="9" onclick="const link=this.querySelector('a'); if(link){ window.location=link.href; }" style="cursor:pointer;">
+                <a href="#">9</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
